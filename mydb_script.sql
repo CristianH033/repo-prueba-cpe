@@ -58,8 +58,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`PRODUCTO_SERVICIO` (
   `descripcion` VARCHAR(200) NOT NULL,
   `valorUnidad` INT NOT NULL,
   `fechaEntrega` DATE NOT NULL,
-  `fechaVencimiento` DATE GENERATED ALWAYS AS () VIRTUAL,
-  `activo` TINYINT NOT NULL DEFAULT 1,
+  `fechaVencimiento` DATE NOT NULL,
+  `activo` TINYINT NULL,
   PRIMARY KEY (`idPRODUCTO`))
 ENGINE = InnoDB;
 
