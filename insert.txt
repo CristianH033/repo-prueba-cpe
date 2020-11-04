@@ -1,0 +1,7 @@
+INSERT INTO mydb.PERSONA
+(idPERSONA, cedula, nombre, apellido1, apellido2, email, telefono)
+VALUES(1, 1098637654, 'Juan', 'Carreño', ' Peñaloza', 'jcarreno@cpe.gov.co', '3137777');
+
+INSERT INTO mydb.USUARIO
+(idUSUARIO, rol, login, password, idPersona)
+VALUES(1, 'Administrador', 'jcarreno', '123456', 1);
